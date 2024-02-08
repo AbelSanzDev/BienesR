@@ -623,6 +623,10 @@ video {
   width: 40%;
 }
 
+.w-3\/6 {
+  width: 50%;
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -1619,6 +1623,10 @@ h4 {
 @media (min-width: 720px) {
   .md\:w-1\/5 {
     width: 20%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:text-6xl {
