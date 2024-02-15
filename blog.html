@@ -10,135 +10,90 @@
 
 <body>
 
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a class="text-7xl font-bold border border-b-2 p-1" href="/">
+    <header class="header  relative ">
+        <div class="barra right-2 mx-8 md:mx-24 ">
+            <div class="flex justify-between">
+                <a class="text-7xl font-bold border border-b-2 p-1   text-center text-white" href="/">
                     BHouse
-
                 </a>
 
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu responsive">
+                <!-- <div class="  mobile-menu  ">
+                        <img src="build/img/barras.svg" alt="icono menu responsive">
+                    </div> -->
+                <div class="mt-2">
+                    <input id="checkbox" type="checkbox">
+                    <label class="toggle mobile-menu" for="checkbox">
+                        <div id="bar1" class="bars"></div>
+                        <div id="bar2" class="bars"></div>
+                        <div id="bar3" class="bars"></div>
+                    </label>
                 </div>
-
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-
-            </div> <!--.barra-->
-        </div>
+            </div>
+            <nav class="navegacion text-white font-bold py-4 md:flex gap-8 mt-10 md:mt-0">
+                <a class="font-bold  text-white hover:text-yellow-900" href="nosotros.html">Nosotros</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="anuncios.html">Anuncios</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="blog.html">Blog</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="contacto.html">Contacto</a>
+            </nav>
+        </div> <!--.barra-->
     </header>
 
-    <main class="contenedor seccion contenido-centrado">
-        <h1 class="font-bold text-red-500">Nuestro Blog</h1>
-
-        <article class="entrada-blog">
-            <div class="imagen">
-                <picture>
-                    <source srcset="build/img/blog1.webp" type="image/webp">
-                    <source srcset="build/img/blog1.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/blog1.jpg" alt="Texto Entrada Blog">
-                </picture>
+    <main class="contenedor">
+        <div class="mt-10 rounded-md shadow">
+            <img class="h-[55rem] object-cover" src="src/img/pexels-blue-bird-7218525.jpg" alt="">
+            <h1>Cómo Transformar tu Espacio: Ideas de Renovación para el Hogar</h1>
+            <p class="p-4">En esta publicación, puedes destacar diversas ideas creativas y asequibles para renovar
+                diferentes áreas
+                de una casa. Desde cambios simples en la decoración hasta proyectos de renovación más grandes,
+                proporciona inspiración y consejos prácticos para que los lectores puedan transformar sus espacios.</p>
+        </div>
+        <div class="flex gap-5">
+            <div class="mt-10 rounded-md shadow">
+                <img class="h-[55rem] object-cover" src="src/img/pexels-cal-david-735319.jpg" alt="">
+                <h1 class="">Tendencias de Diseño de Interiores: Lo Último en Estilo para tu Hogar</h1>
+                <p class="p-4">Explora las tendencias actuales en diseño de interiores, desde paletas de colores
+                    populares
+                    hasta estilos
+                    arquitectónicos modernos. Proporciona ejemplos visuales y sugiere cómo incorporar estas tendencias
+                    en
+                    cualquier hogar, independientemente de su tamaño o presupuesto.</p>
             </div>
-
-            <div class="texto-entrada">
-                <a href="entrada.html">
-                    <h4>Terraza en el techo de tu casa</h4>
-                    <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
-
-                    <p>
-                        Consejos para construir una terraza en el techo de tu casa con los mejores materiales y
-                        ahorrando dinero
-                    </p>
-                </a>
+            <div class="mt-10 rounded-md shadow">
+                <img class="h-[55rem] object-cover" src="src/img/pexels-pixabay-158028.jpg" alt="">
+                <h1 class="">Jardinería en Casa: Cómo Cultivar un Oasis en tu Patio</h1>
+                <p class="p-4">Explora la importancia de la jardinería en el hogar y proporciona consejos prácticos para
+                    aquellos que
+                    desean cultivar un jardín en su patio. Incluye información sobre plantas de bajo mantenimiento,
+                    diseño
+                    de jardines y cómo aprovechar al máximo el espacio exterior.</p>
             </div>
-        </article>
+        </div>
+        <div class="mt-10 rounded-md shadow">
+            <img class="h-[55rem] object-cover" src="src/img/pexels-diego-gonzalez-14604748.jpg" alt="">
+            <h1 class="">Consejos para la Compra de tu Primera Casa: Una Guía Completa</h1>
+            <p class="p-4">Esta publicación puede ser una guía detallada para aquellos que están considerando
+                comprar su
+                primera
+                casa. Incluye información sobre financiamiento, negociación de precios, inspecciones y todo lo que
+                los
+                futuros propietarios necesitan saber para tomar decisiones informadas.</p>
+        </div>
 
-        <article class="entrada-blog">
-            <div class="imagen">
-                <picture>
-                    <source srcset="build/img/blog2.webp" type="image/webp">
-                    <source srcset="build/img/blog2.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/blog2.jpg" alt="Texto Entrada Blog">
-                </picture>
-            </div>
-
-            <div class="texto-entrada">
-                <a href="entrada.html">
-                    <h4>Guía para la decoración de tu hogar</h4>
-                    <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
-
-                    <p>
-                        Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle
-                        vida a tu espacio
-                    </p>
-                </a>
-            </div>
-        </article>
-
-        <article class="entrada-blog">
-            <div class="imagen">
-                <picture>
-                    <source srcset="build/img/blog3.webp" type="image/webp">
-                    <source srcset="build/img/blog3.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/blog3.jpg" alt="Texto Entrada Blog">
-                </picture>
-            </div>
-
-            <div class="texto-entrada">
-                <a href="entrada.html">
-                    <h4>Terraza en el techo de tu casa</h4>
-                    <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
-
-                    <p>
-                        Consejos para construir una terraza en el techo de tu casa con los mejores materiales y
-                        ahorrando dinero
-                    </p>
-                </a>
-            </div>
-        </article>
-
-        <article class="entrada-blog">
-            <div class="imagen">
-                <picture>
-                    <source srcset="build/img/blog4.webp" type="image/webp">
-                    <source srcset="build/img/blog4.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/blog4.jpg" alt="Texto Entrada Blog">
-                </picture>
-            </div>
-
-            <div class="texto-entrada">
-                <a href="entrada.html">
-                    <h4>Guía para la decoración de tu hogar</h4>
-                    <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
-
-                    <p>
-                        Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle
-                        vida a tu espacio
-                    </p>
-                </a>
-            </div>
-        </article>
+        <div class="mt-10 rounded-md shadow">
+            <img class="h-[55rem] object-cover" src="src/img/pexels-chait-goli-2031727.jpg" alt="">
+            <h1 class="">Casas Sostenibles: Cómo Hacer que tu Hogar Sea Más Amigable con el Medio Ambiente</h1>
+            <p class="p-4">Aborda la creciente conciencia ambiental al discutir formas de hacer que una casa sea más
+                sostenible.
+                Puedes explorar opciones de energía renovable, materiales eco-amigables, y prácticas diarias que ayuden
+                a reducir la huella de carbono de una casa.</p>
+        </div>
     </main>
 
     <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
 
-        <p class="copyright">Todos los derechos Reservados 2021 &copy;</p>
+
+        <p class="copyright">Todos los derechos Reservados 2024 <span
+                class="font-bold border border-b-2 p-1">BHouse</span> &copy;</p>
     </footer>
 
     <script src="build/js/bundle.min.js"></script>
