@@ -10,41 +10,78 @@
 
 <body>
 
-    <header class="header inicio relative h-full">
+    <header class="header inicio relative h-screen">
         <img class="absolute w-full h-full object-cover brightness-50 transition ease-in-out p-0 m-0 "
             src="build/img/pexels-michael-tuszynski-2157404.webp" alt="">
-        <div class="contenedor contenido-header relative">
+        <div class="  h-screen relative">
 
-            <div class="barra right-2">
+            <div class="barra right-2 mx-8 md:mx-24 ">
                 <div class="flex justify-between">
-                    <a class="text-7xl font-bold border border-b-2 py-1 w-3/6 md:w-full text-center text-white"
-                        href="/">
+                    <a class="text-7xl font-bold border border-b-2 p-1   text-center text-white" href="/">
                         BHouse
                     </a>
 
-                    <div class="  mobile-menu  ">
+                    <!-- <div class="  mobile-menu  ">
                         <img src="build/img/barras.svg" alt="icono menu responsive">
+                    </div> -->
+                    <div class="mt-2">
+                        <input id="checkbox" type="checkbox">
+                        <label class="toggle mobile-menu" for="checkbox">
+                            <div id="bar1" class="bars"></div>
+                            <div id="bar2" class="bars"></div>
+                            <div id="bar3" class="bars"></div>
+                        </label>
                     </div>
+
+
+
+
+
                 </div>
 
-                <div class="items-center">
-                    <div class="derecha">
-                        <img class="dark-mode-boton md:opacity-100 opacity-100" src="build/img/dark-mode.svg">
-                        <nav class="navegacion">
-                            <a class="font-bold" href="nosotros.html">Nosotros</a>
-                            <a class="font-bold" href="anuncios.html">Anuncios</a>
-                            <a class="font-bold" href="blog.html">Blog</a>
-                            <a class="font-bold" href="contacto.html">Contacto</a>
-                        </nav>
-                    </div>
-                </div>
+                <nav class="navegacion text-white font-bold py-4 md:flex gap-8 mt-10 md:mt-0">
+                    <a class="font-bold  text-white hover:text-yellow-900" href="nosotros.html">Nosotros</a>
+                    <a class="font-bold  text-white hover:text-yellow-900" href="anuncios.html">Anuncios</a>
+                    <a class="font-bold  text-white hover:text-yellow-900" href="blog.html">Blog</a>
+                    <a class="font-bold  text-white hover:text-yellow-900" href="contacto.html">Contacto</a>
+                </nav>
+
+
+
+
 
 
 
             </div> <!--.barra-->
+            <div class="grid place-items-center">
+                <div class=" bottom-1 absolute seccion contenedor">
 
-            <h1 class="md:text-6xl text-5xl">Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+                    <h1 class="md:text-8xl text-5xl font-bold text-white">Venta de Casas y Departamentos Exclusivos de
+                        Lujo
+                    </h1>
+
+
+                    <div class="grid place-items-center">
+                        <div class=" mb-10 border w-24 py-9 rounded-full">
+                            <div class="grid place-items-center">
+                                <div class=" w-20 animate-bounce">
+                                    <!-- <h1 class="text-center  bottom-1">more</h1> -->
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeklEQVR4nO2aQUsVURTHf6ueLQqD0na5bFGr3q6WoQSFLk0/gyR+C7NFURBt+wjZo/wGEq1Ln67SFKNaZ4YnLhzhMW+uM/fOmZmL+Ic/DLy5Z/7/d+7cOffMwDnOLq4AM8AK0AM2gN/AodIdf9Xf3DnTwCiJoAPMA2vAP0AC6cZ8AOY0VuO4CCwB3yPE+7gLLAIjTZl4AGwbGshyC5iq04BL/YsaDWT5VjNvinHgc4MmRPkJGLMyMaHplpbYVw2VcE2XUWmZ28D1WBMjLU0nOWWaRS3RrxMQLxm+jFliJVFOljXh0reZgGDxcKvsQ3MpAbFSwCdlsrGbgFAp4E7RjT+fgEgpycenGVlLQKCUpNsOePcTMaV4WzwCLucZmUlAnATyYZ6RZwkIk0A+zTPyPjDIXaALHBgIcjHuAPcCx63mGekHBnEXdrhV0cyBxnDoBo51Be0QfgUG+QHc1rE3gb0IE9kY+xHjh3BoIGSvQRMC/LEyEmvGwoT4jIROrVgzVibEN7WqVryDN61vAShzjgTQNfyG0KsYtCgzlpkQ5bs8IysGgX3/unUmRLmcZ2TaKHiemTpMiK9EGTUuGgfN1GHir69odPhoeKETM13DUkYG6EoqL+aML1YnZ8/KVvcCBVhMQKgUcKHIxElWUmiTiof9kI7jVAKCJYfHwH0C8SoB4ZLhcyLQ0caxJML1Mje4D1cTeq0wTkVMRGyDLbkJ3MAIYy1Ns3V92VTLy9Djhky8qfvd+2TNU20jZomNRUdb+zuGBr7pE7uVLyA62hXvaS82VPyRVrGzVZZWa7i9wSNtY67qfvrnwEc17viLbk+XdVN0yVzFOUgD/wGYkzk+j2IiwQAAAABJRU5ErkJggg==">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </div>
+
+
     </header>
 
 
@@ -60,7 +97,7 @@
                         colors="primary:#ffc738,secondary:#848484,tertiary:#b26836" style="width:250px;height:250px">
                     </lord-icon>
                 </div>
-                <div class=" rounded-lg p-2 shadow-md shadow-gray-800">
+                <div class=" rounded-lg p-2 shadow-md ">
                     <h3>Seguridad</h3>
                     <p>Nos comprometemos a brindarte transparencia y tranquilidad en cada transacción. Desde el primer
                         vistazo a una propiedad hasta el cierre de la negociación, mantenemos la más alta integridad y
@@ -80,9 +117,10 @@
                         style="width:250px;height:250px">
                     </lord-icon>
                 </div>
-                <div class=" rounded-lg p-2 shadow-md shadow-gray-800">
+                <div class=" rounded-lg p-2 shadow-md ">
                     <h3>Precio</h3>
-                    <p>En <span class="font-bold border border-b-2 p-1">BHouse</span> , creemos en ofrecer valor real.
+                    <p>En <span class="font-bold border border-b-2 border-black p-1">BHouse</span>, creemos en ofrecer
+                        valor real.
                         Nuestros
                         precios son justos y competitivos
                         en el mercado, y nos esforzamos por proporcionar transparencia en cada aspecto de la
@@ -100,7 +138,7 @@
                         style="width:250px;height:250px">
                     </lord-icon>
                 </div>
-                <div class=" rounded-lg p-2 shadow-md shadow-gray-800">
+                <div class=" rounded-lg p-2 shadow-md">
                     <h3>A Tiempo</h3>
                     <p>Sabemos que el tiempo es esencial en bienes raíces. Nos comprometemos a una eficiencia
                         excepcional en
@@ -113,23 +151,22 @@
         </div>
     </main>
     <h3 class="font-bold text-9xl my-28">
-        <span class="font-bold border border-b-2 p-1">BHouse</span>
+        <span class="font-bold border border-b-2 border-black p-1">BHouse</span>
     </h3>
     <section class="seccion contenedor">
         <h2 class="font-bold">Casas y Departamentos en Venta</h2>
 
         <div class="contenedor-anuncios ">
             <div class="anuncio rounded-xl">
-                <picture>
-                    <source srcset="build/img/anuncio1.webp" type="image/webp">
-                    <source srcset="build/img/anuncio1.jpg" type="image/jpeg">
-                    <img class="rounded-t-xl" loading="lazy" src="build/img/anuncio1.jpg" alt="anuncio">
-                </picture>
+
+                <img class="rounded-t-xl h-[32rem]" loading="lazy" src="src/img/casa1.png" alt="anuncio">
+
 
                 <div class="contenido-anuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
+                    <h3>Infonavit playas</h3>
+                    <p>Una encantadora residencia, estratégicamente ubicada en una conveniente zona
+                        comercial</p>
+                    <p class="precio">$1,100,000</p>
 
                     <ul class="iconos-caracteristicas">
                         <li>
@@ -157,16 +194,12 @@
             </div><!--anuncio-->
 
             <div class="anuncio rounded-xl shadow-md">
-                <picture>
-                    <source srcset="build/img/anuncio2.webp" type="image/webp">
-                    <source srcset="build/img/anuncio2.jpg" type="image/jpeg">
-                    <img class="rounded-t-xl" loading="lazy" src="build/img/anuncio2.jpg" alt="anuncio">
-                </picture>
+                <img class="rounded-t-xl h-[32rem]" loading="lazy" src="src/img/casa2.png" alt="anuncio">
 
                 <div class="contenido-anuncio">
-                    <h3>Casa terminados de lujo</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
+                    <h3>Villas del rey</h3>
+                    <p>Una acogedora residencia de dos pisos se alza majestuosamente en un vecindario tranquilo</p>
+                    <p class="precio">$800,000</p>
 
                     <ul class="iconos-caracteristicas">
                         <li>
@@ -193,16 +226,12 @@
             </div><!--anuncio-->
 
             <div class="anuncio rounded-xl">
-                <picture>
-                    <source srcset="build/img/anuncio3.webp" type="image/webp">
-                    <source srcset="build/img/anuncio3.jpg" type="image/jpeg">
-                    <img class="rounded-t-xl" loading="lazy" src="build/img/anuncio3.jpg" alt="anuncio">
-                </picture>
+                <img class="rounded-t-xl h-[32rem]" loading="lazy" src="src/img/casa3.png" alt="anuncio">
 
                 <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
+                    <h3>Villas del rey</h3>
+                    <p>Una encantadora residencia se alza con elegancia en medio de un vecindario sereno</p>
+                    <p class="precio">$1,000,000</p>
 
                     <ul class="iconos-caracteristicas">
                         <li>
