@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes Raices</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 
 <body>
@@ -65,12 +66,12 @@
             </div>
             <form class="w-full" action="">
                 <div class="input-group w-full">
-                    <input required="" type="text" name="text" autocomplete="off" class="input w-full">
+                    <input required="" type="text" name="text" autocomplete="off" class="input valid w-full">
                     <label class="user-label">Nombre</label>
                 </div>
                 <div class="input-group w-full mt-8">
-                    <input required="" type="text" name="text" autocomplete="off" class="input w-full ">
-                    <label class="user-label">Email</label>
+                    <input required="" type="text" name="text" autocomplete="off" class="input inputt w-full ">
+                    <label class="user-label label">Email</label>
                 </div>
                 <div class="input-group w-full mt-8">
                     <input required="" type="text" name="text" autocomplete="off" class="input w-full">
@@ -150,7 +151,14 @@
 
     <footer class="footer seccion">
 
-
+        <div class="">
+            <input id="checkbox" type="checkbox">
+            <label class="toggle" for="checkbox">
+                <div id="bar1" class="bars"></div>
+                <div id="bar2" class="bars"></div>
+                <div id="bar3" class="bars"></div>
+            </label>
+        </div>
         <p class="copyright">Todos los derechos Reservados 2024 <span
                 class="font-bold border border-b-2 p-1">BHouse</span> &copy;</p>
     </footer>
