@@ -10,30 +10,32 @@
 
 <body>
 
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a class="text-7xl font-bold border border-b-2 p-1" href="/">
+    <header class="header  relative ">
+        <div class="barra right-2 mx-8 md:mx-24 ">
+            <div class="flex justify-between">
+                <a class="text-7xl font-bold border border-b-2 p-1   text-center text-white" href="/">
                     BHouse
-
                 </a>
 
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu responsive">
+                <!-- <div class="  mobile-menu  ">
+                        <img src="build/img/barras.svg" alt="icono menu responsive">
+                    </div> -->
+                <div class="mt-2">
+                    <input id="checkbox" type="checkbox">
+                    <label class="toggle mobile-menu" for="checkbox">
+                        <div id="bar1" class="bars"></div>
+                        <div id="bar2" class="bars"></div>
+                        <div id="bar3" class="bars"></div>
+                    </label>
                 </div>
-
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-
-            </div> <!--.barra-->
-        </div>
+            </div>
+            <nav class="navegacion text-white font-bold py-4 md:flex gap-8 mt-10 md:mt-0">
+                <a class="font-bold  text-white hover:text-yellow-900" href="nosotros.html">Nosotros</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="anuncios.html">Anuncios</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="blog.html">Blog</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="contacto.html">Contacto</a>
+            </nav>
+        </div> <!--.barra-->
     </header>
 
     <main class="contenedor seccion">
@@ -41,27 +43,26 @@
         <h2>Casas y Depas en Venta</h2>
 
         <div class="contenedor-anuncios">
-            <div class="anuncio">
-                <picture>
-                    <source srcset="build/img/anuncio1.webp" type="image/webp">
-                    <source srcset="build/img/anuncio1.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio1.jpg" alt="anuncio">
-                </picture>
+            <div class="anuncio rounded-xl">
+
+                <img class="rounded-t-xl h-[32rem]" loading="lazy" src="src/img/casa1.png" alt="anuncio">
+
 
                 <div class="contenido-anuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
+                    <h3>Infonavit playas</h3>
+                    <p>Una encantadora residencia, estratégicamente ubicada en una conveniente zona
+                        comercial</p>
+                    <p class="precio">$1,100,000</p>
 
                     <ul class="iconos-caracteristicas">
                         <li>
                             <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
+                            <p>2</p>
                         </li>
                         <li>
                             <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg"
                                 alt="icono estacionamiento">
-                            <p>3</p>
+                            <p>1</p>
                         </li>
                         <li>
                             <img class="icono" loading="lazy" src="build/img/icono_dormitorio.svg"
@@ -70,33 +71,63 @@
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="cotizarCasa.html"
+                        class="block px-2 py-4  text-center mt-11 rounded-lg hover:animate-pulse  text-3xl font-bold border-yellow-900 border-2">
+                        Ver Propiedad
+                    </a>
+
+                </div><!--.contenido-anuncio-->
+            </div><!--anuncio-->
+
+            <div class="anuncio rounded-xl shadow-md">
+                <img class="rounded-t-xl h-[32rem]" loading="lazy" src="src/img/casa2.png" alt="anuncio">
+
+                <div class="contenido-anuncio">
+                    <h3>Villas del rey</h3>
+                    <p>Una acogedora residencia de dos pisos se alza majestuosamente en un vecindario tranquilo</p>
+                    <p class="precio">$800,000</p>
+
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg"
+                                alt="icono estacionamiento">
+                            <p>1</p>
+                        </li>
+                        <li>
+                            <img class="icono" loading="lazy" src="build/img/icono_dormitorio.svg"
+                                alt="icono habitaciones">
+                            <p>2</p>
+                        </li>
+                    </ul>
+
+                    <a href="cotizarCasaVillasDelRey.html"
+                        class="block px-2 py-4  text-center mt-11 rounded-lg hover:animate-pulse    text-3xl font-bold border-yellow-900 border-2">
                         Ver Propiedad
                     </a>
                 </div><!--.contenido-anuncio-->
             </div><!--anuncio-->
 
-            <div class="anuncio">
-                <picture>
-                    <source srcset="build/img/anuncio2.webp" type="image/webp">
-                    <source srcset="build/img/anuncio2.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio2.jpg" alt="anuncio">
-                </picture>
+            <div class="anuncio rounded-xl">
+                <img class="rounded-t-xl h-[32rem]" loading="lazy" src="src/img/casa3.png" alt="anuncio">
 
                 <div class="contenido-anuncio">
-                    <h3>Casa terminados de lujo</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
+                    <h3>Villas del rey</h3>
+                    <p>Una encantadora residencia se alza con elegancia en medio de un vecindario sereno</p>
+                    <p class="precio">$2,000,000</p>
 
                     <ul class="iconos-caracteristicas">
                         <li>
                             <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
+                            <p>2</p>
                         </li>
                         <li>
                             <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg"
                                 alt="icono estacionamiento">
-                            <p>3</p>
+                            <p>2</p>
                         </li>
                         <li>
                             <img class="icono" loading="lazy" src="build/img/icono_dormitorio.svg"
@@ -105,151 +136,14 @@
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="cotizarCasaVillasDelRey223123.html"
+                        class="block px-2 py-4  text-center mt-11 rounded-lg hover:animate-pulse   text-3xl font-bold border-yellow-900 border-2">
                         Ver Propiedad
                     </a>
                 </div><!--.contenido-anuncio-->
             </div><!--anuncio-->
 
-            <div class="anuncio">
-                <picture>
-                    <source srcset="build/img/anuncio3.webp" type="image/webp">
-                    <source srcset="build/img/anuncio3.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio3.jpg" alt="anuncio">
-                </picture>
 
-                <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
-
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg"
-                                alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_dormitorio.svg"
-                                alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a href="anuncio.html" class="boton-amarillo-block">
-                        Ver Propiedad
-                    </a>
-                </div><!--.contenido-anuncio-->
-            </div><!--anuncio-->
-
-            <div class="anuncio">
-                <picture>
-                    <source srcset="build/img/anuncio4.webp" type="image/webp">
-                    <source srcset="build/img/anuncio4.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio4.jpg" alt="anuncio">
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
-
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg"
-                                alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_dormitorio.svg"
-                                alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a href="anuncio.html" class="boton-amarillo-block">
-                        Ver Propiedad
-                    </a>
-                </div><!--.contenido-anuncio-->
-            </div><!--anuncio-->
-
-            <div class="anuncio">
-                <picture>
-                    <source srcset="build/img/anuncio5.webp" type="image/webp">
-                    <source srcset="build/img/anuncio5.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio5.jpg" alt="anuncio">
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
-
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg"
-                                alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_dormitorio.svg"
-                                alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a href="anuncio.html" class="boton-amarillo-block">
-                        Ver Propiedad
-                    </a>
-                </div><!--.contenido-anuncio-->
-            </div><!--anuncio-->
-
-            <div class="anuncio">
-                <picture>
-                    <source srcset="build/img/anuncio6.webp" type="image/webp">
-                    <source srcset="build/img/anuncio6.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio6.jpg" alt="anuncio">
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
-
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg"
-                                alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="build/img/icono_dormitorio.svg"
-                                alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a href="anuncio.html" class="boton-amarillo-block">
-                        Ver Propiedad
-                    </a>
-                </div><!--.contenido-anuncio-->
-            </div><!--anuncio-->
 
         </div> <!--.contenedor-anuncios-->
     </main>
