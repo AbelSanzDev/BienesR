@@ -11,45 +11,32 @@
 
 <body>
 
-    <header class="header   ">
+    <header class="header  relative ">
+        <div class="barra right-2 mx-8 md:mx-24 ">
+            <div class="flex justify-between">
+                <a class="text-7xl font-bold border border-b-2 p-1   text-center text-white" href="/">
+                    BHouse
+                </a>
 
-        <div class="  ">
-
-            <div class="flex justify-between right-2 mx-24 items-center pt-10">
-                <div class="flex justify-between">
-                    <a class="text-7xl font-bold border border-b-2 py-1 w-3/6 md:w-full text-center text-white"
-                        href="/">
-                        BHouse
-                    </a>
-
-                    <div class="  mobile-menu  ">
+                <!-- <div class="  mobile-menu  ">
                         <img src="build/img/barras.svg" alt="icono menu responsive">
-
-                    </div>
+                    </div> -->
+                <div class="mt-2">
+                    <input id="checkbox" type="checkbox">
+                    <label class="toggle mobile-menu" for="checkbox">
+                        <div id="bar1" class="bars"></div>
+                        <div id="bar2" class="bars"></div>
+                        <div id="bar3" class="bars"></div>
+                    </label>
                 </div>
-
-                <div class="items-center">
-
-                    <nav class="navegacion">
-                        <a class="font-bold" href="nosotros.html">Nosotros</a>
-                        <a class="font-bold" href="anuncios.html">Anuncios</a>
-                        <a class="font-bold" href="blog.html">Blog</a>
-                        <a class="font-bold" href="contacto.html">Contacto</a>
-                    </nav>
-
-                </div>
-
-
-
-            </div> <!--.barra-->
-
-
-
-
-
-        </div>
-
-
+            </div>
+            <nav class="navegacion text-white font-bold py-4 md:flex gap-8 mt-10 md:mt-0">
+                <a class="font-bold  text-white hover:text-yellow-900" href="nosotros.html">Nosotros</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="anuncios.html">Anuncios</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="blog.html">Blog</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="contacto.html">Contacto</a>
+            </nav>
+        </div> <!--.barra-->
     </header>
 
     <main class="contenedor seccion">
@@ -59,15 +46,15 @@
                 Infonavit playas
             </h1>
         </div>
-        <div class="flex gap-8">
+        <div class="md:flex gap-8">
 
-            <div class="w-full">
+            <div class="w-full mb-8 md:mb-0">
                 <img class="rounded-md" src="src/img/casa1.png" alt="">
             </div>
             <form class="w-full" action="">
                 <div class="input-group w-full">
-                    <input required="" type="text" name="text" autocomplete="off" class="input valid w-full">
-                    <label class="user-label">Nombre</label>
+                    <input required="" type="text" name="text" autocomplete="off" class="input inputt  w-full">
+                    <label class="user-label label">Nombre</label>
                 </div>
                 <div class="input-group w-full mt-8">
                     <input required="" type="text" name="text" autocomplete="off" class="input inputt w-full ">
@@ -75,13 +62,13 @@
                 </div>
                 <div class="input-group w-full mt-8">
                     <input required="" type="text" name="text" autocomplete="off" class="input w-full">
-                    <label class="user-label">Telefono</label>
+                    <label class="user-label label">Telefono</label>
                 </div>
                 <div class="input-group w-full mt-8">
                     <!-- <input required="" type="text" name="text" autocomplete="off" class="input w-full"> -->
                     <textarea style="height: 265px;" required="" type="text" name="text" autocomplete="off"
                         class="input w-full"></textarea>
-                    <label class="user-label">Mensaje</label>
+                    <label class="user-label label">Mensaje</label>
 
                 </div>
                 <button type="submit w-full"
@@ -151,14 +138,7 @@
 
     <footer class="footer seccion">
 
-        <div class="">
-            <input id="checkbox" type="checkbox">
-            <label class="toggle" for="checkbox">
-                <div id="bar1" class="bars"></div>
-                <div id="bar2" class="bars"></div>
-                <div id="bar3" class="bars"></div>
-            </label>
-        </div>
+
         <p class="copyright">Todos los derechos Reservados 2024 <span
                 class="font-bold border border-b-2 p-1">BHouse</span> &copy;</p>
     </footer>
