@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+
+    <header class="header  relative ">
+        <div class="barra right-2 mx-8 md:mx-24 ">
+            <div class="flex justify-between">
+                <a class="text-7xl font-bold border border-b-2 p-1   text-center text-white" href="/">
+                    BHouse
+                </a>
+
+                <!-- <div class="  mobile-menu  ">
+                        <img src="build/img/barras.svg" alt="icono menu responsive">
+                    </div> -->
+                <div class="mt-2">
+                    <input id="checkbox" type="checkbox">
+                    <label class="toggle mobile-menu" for="checkbox">
+                        <div id="bar1" class="bars"></div>
+                        <div id="bar2" class="bars"></div>
+                        <div id="bar3" class="bars"></div>
+                    </label>
+                </div>
+            </div>
+            <nav class="navegacion text-white font-bold py-4 md:flex gap-8 mt-10 md:mt-0">
+                <a class="font-bold  text-white hover:text-yellow-900" href="nosotros.html">Nosotros</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="anuncios.html">Anuncios</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="blog.html">Blog</a>
+                <a class="font-bold  text-white hover:text-yellow-900" href="contacto.html">Contacto</a>
+            </nav>
+        </div> <!--.barra-->
+    </header>
+
+    <main class="contenedor seccion">
+        <div>
+
+            <h1 class="font-bold">
+                Villas del rey </h1>
+        </div>
+        <div class="md:flex gap-8">
+
+            <div class="w-full mb-8 md:mb-0">
+                <img class="rounded-md" src="src/img/casa3.png" alt="">
+            </div>
+            <form class="w-full" action="">
+                <div class="form mb-5">
+                    <input class="input " placeholder="Nombre" required="" type="text">
+                    <span class="input-border"></span>
+                </div>
+                <div class="form mb-5">
+                    <input class="input" placeholder="Email" required="" type="text">
+                    <span class="input-border"></span>
+                </div>
+                <div class="form mb-5">
+                    <input class="input" placeholder="Telefono" required="" type="text">
+                    <span class="input-border"></span>
+                </div>
+                <div class="form mb-5">
+                    <!-- <input type="text"> -->
+                    <textarea rows="8" class="input" placeholder="Mensaje" required="""></textarea>
+                    <span class=" input-border"></span>
+                </div>
+                
+                <button type="submit w-full"
+                    class="block px-2 py-4  text-center mt-1 rounded-lg hover:animate-pulse  text-3xl font-bold border-yellow-900 border-2">
+                    Consultar
+                </button>
+
+            </form>
+
+        </div>
+        <div>
+
+            <div class="grid place-items-center mt-20">
+                <ul class="flex gap-28 text-center">
+                    <li>
+                        <img class="h-[6rem]"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADiUlEQVR4nO2dT4hNURzHv1OYKXopY6FIsWDBhh0aSWRiicQUC4k0CymLaUoWstAsLC0QlhY2KKRmlLFhRxZqTN5YaZI/ySyeo5ujbj93jDv3vXu/59zvp36b1+32+53v+33vuefc+x4ghBBCCCHKZS+AKQCuQ9EE0I/61OuK1t0sIbn34KFZQr2F6i4rORZcyUGbIAsuNEE6VTgLrsN5SZCcSBB1SD5kWe1FlpUTWZYsKx+yrPYiy8qJLEuWlQ9ZVnuRZeVEliXLyocsq73IsnIiyyK3LKfl92qRIGQd0gxtCzf2Dar+Ep8j2DOfBOsmSKfya9v5JAgkCAPqEDKcLIsLJ0G4cBKEW5D1AEYAfPAx4j+zrJvlOM2yCmIH8Ocsn40COOxj9B/HSZCC0K1hzZZYXW8MnQSplncF7Gmu45Jzz5u6dshuABMAJv/jAj7lY67jJv05k3PPm7oKQosEIUOCkCFByJAgZEgQMiQIGRKkZksI7PENwHMApwEsAgFVD4gjipcAVkgQUMULAAvVIaCKU0yC1I2VAO6bMRivMqG6C5KwyozBF1SIBMFfgnyVINWK8cAI8qTCfCq/gDqySHb/tksQ0IgxhIr5SDAQjiCSffD9IOAVwWA4gugGCU9NYicRP92m5h8g4pZJ7griZ7mpObFtGoZMco8QP5tNza9BxM6Mm6IexM2AqfkuiFjsPTSdINMvUXeCq6beCyDjnknwBuKlyz9hmK53B8g4lDHrqHyjpkP0mVo/M1r0goxvzWXEyR1T53WQcsYkOuMfIo6JjQBaps6tIGVJxi8cPPaeGwNd/tWBdH1jIOdgxpLCUcTBYMZC4jYEwMOMu9ilCJstGVP72wiE1X7mkU7+EsJlA4BpU09izcsQECdMAd8B9CLMzpjOmKwEYVX2AjhuCjmHsPIfzLCp5LpxBIGyybzM+BbhTG1HMyYnLd/5QTNmiloD3o7o8zd99j7jz/O7BxABx0xhx6tOCL8fiO71S+gDfqHQrjKk443vmihYW3BbtMqYAXCRcZ2qCD0EA+tyRnIhv+an71HiAoiWf8fjrN+ejRpHGM8A3ARwHsC+OoiQxg5G2TQybu6GUWOqFgRegHQOnyJYXwtakIa6hEuQBHUJmSANdQmXIAnqEjJBGuoSLkESat8lLoAYRo1wAcQEakSZ/0jjJAjPP9K4AmLsKuGLKYQQQgghwM4v1MD96VZ1I6sAAAAASUVORK5CYII=">
+                        <p class="font-bold">2</p>
+                    </li>
+                    <li>
+                        <img class="w-32" loading="lazy" src="build/img/icono_estacionamiento.svg"
+                            alt="icono estacionamiento">
+                        <p class="font-bold">2</p>
+                    </li>
+                    <li>
+                        <img class="w-36" loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono habitaciones">
+                        <p class="font-bold">4</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="mt-6">
+            <p class="text-3xl md:text-4xl">Ubicada en un vecindario consolidado, esta casa ha sido cuidadosamente construida para ofrecer un hogar espacioso y funcional. Con una fachada que irradia modernidad y comodidad, la residencia ha alcanzado su plenitud y se presenta como un refugio listo para ser habitado. <br> <br>
+
+                La casa cuenta con cuatro dormitorios, proporcionando generoso espacio para la vida familiar. Dos baños bien diseñados resaltan la atención a la funcionalidad y el estilo, garantizando comodidad para los residentes.
+                
+                La cocina, pensada como el corazón del hogar, se conecta con la sala de estar, creando un ambiente propicio para la convivencia familiar. Las amplias aberturas permiten la entrada de luz natural, creando un interior luminoso y acogedor. <br> <br>
+                
+                Dos espacios de estacionamiento, integrados de manera conveniente, satisfacen las necesidades de los residentes en términos de movilidad y comodidad. El patio trasero, diseñado con versatilidad, ofrece un espacio al aire libre para actividades y momentos de relajación.</p>
+        </div>
+        <div>
+            <h1 class="font-bold">Ubicacion</h1>
+            <div class="grid place-items-center">
+                <div>
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/tdtlrbly.json" trigger="hover"
+                        colors="primary:#121331,secondary:#c79816" style="width:100px;height:100px">
+                    </lord-icon>
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d648.0473915995562!2d-106.42432420752927!3d23.246385987461515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5343be69d69b%3A0xb876019ec502b2af!2sPlayas%20del%20Pozole%20216%2C%20Playas%2C%2082128%20Mazatl%C3%A1n%2C%20Sin.!5e0!3m2!1ses-419!2smx!4v1707960410926!5m2!1ses-419!2smx"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <footer class="footer seccion">
+
+
+        <p class="copyright">Todos los derechos Reservados 2024 <span
+                class="font-bold border border-b-2 p-1">BHouse</span> &copy;</p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>
