@@ -578,6 +578,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -604,14 +608,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -664,10 +660,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 @keyframes bounce {
@@ -809,16 +801,6 @@ video {
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -1229,7 +1211,14 @@ h4 {
 
 .header {
   background-color: #333;
-  padding: 0rem 0 3rem
+  padding: 0rem 0 0rem
+}
+
+@media(min-width:768px) {
+  .header {
+    background-color: #333;
+    padding: 0rem 0 3rem
+  }
 }
 
 .header.inicio {
@@ -1717,18 +1706,13 @@ h4 {
     display: flex;
   }
 
-  .md\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
